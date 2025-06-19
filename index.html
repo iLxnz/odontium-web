@@ -189,6 +189,34 @@ footer {
   margin-top: 60px;
   font-size: 0.95rem;
 }
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.service-card h3 {
+  color: #6a1b1b;
+  margin: 15px 0 5px;
+}
+.service-card p {
+  padding: 0 15px 20px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
 </style>
 </head>
 <body>
@@ -231,12 +259,36 @@ Cada paso que damos está guiado por nuestro compromiso con la excelencia profes
 </section>
 
 <!-- Objetivos -->
-<section id="objetivos">
+<!-- Objetivos -->
+<section id="objetivos" style="background:#fff0f0;">
   <h2 class="section-title" data-aos="fade-up">Objetivos</h2>
   <p data-aos="fade-up" style="max-width:850px; margin:auto; font-size:1.1rem; line-height:1.7;">
-    En esta parte del portafolio se incluyen las metas que la organización desea alcanzar a corto, mediano y largo plazo. Permite que los futuros clientes o socios se familiaricen con el proceder de la empresa.
+    En Odontium trabajamos con una visión clara y un compromiso constante hacia la excelencia odontológica. Nuestras metas reflejan el propósito de brindar una atención centrada en el bienestar del paciente, la innovación y la responsabilidad social.
   </p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px;">
+    
+    <!-- Corto plazo -->
+    <div style="background: #fff; padding: 25px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);" data-aos="fade-up">
+      <h3 style="color: #6a1b1b;">🔹 Brindar atención personalizada y de calidad a cada paciente.</h3>
+      <p>En Odontium ofrecemos atención personalizada, adaptada a las necesidades de cada paciente. Cuidamos cada detalle, desde el diagnóstico hasta el seguimiento, brindando una experiencia cálida, precisa y profesional en cada visita.</p>
+    </div>
+
+    <!-- Mediano plazo -->
+    <div style="background: #fff; padding: 25px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);" data-aos="fade-up" data-aos-delay="100">
+      <h3 style="color: #6a1b1b;">🔹 Ofrecer servicios de bajo costo para personas de escasos recursos.</h3>
+      <p>En Odontium brindamos servicios odontológicos accesibles, con tarifas pensadas para personas de bajos recursos, promoviendo así la equidad en salud oral y el bienestar de quienes más lo necesitan.</p>
+    </div>
+
+    <!-- Largo plazo -->
+    <div style="background: #fff; padding: 25px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);" data-aos="fade-up" data-aos-delay="200">
+      <h3 style="color: #6a1b1b;">🔹 Asegurar la satisfacción del paciente, promoviendo la confianza y comodidad</h3>
+      <p>En Odontium trabajamos para garantizar la satisfacción del paciente, generando confianza y comodidad en cada etapa del tratamiento, con un enfoque humano, seguro y atento que prioriza su bienestar integral.</p>
+    </div>
+
+  </div>
 </section>
+
 
 <!-- Misión y Visión -->
 <section id="mision" style="background:#fff0f0;">
@@ -265,12 +317,24 @@ Cada paso que damos está guiado por nuestro compromiso con la excelencia profes
 
 
 <!-- Sociedades -->
+<!-- Sociedades -->
 <section id="sociedades" style="background:#fff0f0;">
   <h2 class="section-title" data-aos="fade-up">Sociedades</h2>
   <p data-aos="fade-up" style="max-width:850px; margin:auto; font-size:1.1rem; line-height:1.7;">
-    En esta parte del portafolio se indican las relaciones que la empresa tiene con otras organizaciones o individuos.
+    En Odontium valoramos las relaciones estratégicas que fortalecen la calidad de nuestros servicios y amplían el impacto de nuestra labor. Estas alianzas reflejan nuestro compromiso con la excelencia, la formación continua y el desarrollo sostenible en el campo de la salud oral.
+    <br><br>
+    Colaboramos activamente con entidades del sector salud, instituciones académicas, proveedores especializados y profesionales independientes, con quienes compartimos principios éticos, estándares de calidad y visión de futuro. Estas sociedades nos permiten:
+    <ul style="margin-top: 15px; padding-left: 20px; line-height:1.6;">
+      <li>Acceder a tecnología e insumos de última generación.</li>
+      <li>Participar en proyectos de formación y actualización profesional.</li>
+      <li>Desarrollar campañas educativas y de prevención comunitaria.</li>
+      <li>Garantizar una atención integral con el respaldo de especialistas.</li>
+    </ul>
+    <br>
+    En cada alianza, buscamos generar valor para nuestros pacientes y contribuir al crecimiento colectivo del sector odontológico.
   </p>
 </section>
+
 
 <!-- Clientes -->
 <section id="clientes">
@@ -286,15 +350,30 @@ Valoramos profundamente las opiniones de quienes nos eligen, por eso incluimos e
 </section>
 
 <!-- Proveedores -->
+<!-- Proveedores -->
 <section id="proveedores" style="background:#fff0f0;">
   <h2 class="section-title" data-aos="fade-up">Proveedores</h2>
   <p data-aos="fade-up" style="max-width:850px; margin:auto; font-size:1.1rem; line-height:1.7;">
-    En este apartado se incluyen las organizaciones que suministran materiales para el desarrollo de los servicios que ofrece la empresa que emite el portafolio.<br><br>
-    Al igual que las certificaciones, la información sobre los proveedores revela la calidad de los servicios prestados por la empresa: si los proveedores son de confianza y de calidad, entonces es muy probable que los servicios ofrecidos también lo sean.
+    En Odontium trabajamos con proveedores cuidadosamente seleccionados que nos garantizan materiales odontológicos de alta calidad, biocompatibilidad y respaldo técnico. Estas alianzas estratégicas permiten que cada uno de nuestros tratamientos cuente con insumos seguros, innovadores y alineados con nuestra filosofía de atención integral y orgánica.
+    <br><br>
+    A través de relaciones de confianza y compromiso mutuo, fortalecemos nuestra labor clínica y aseguramos que nuestros pacientes reciban lo mejor en cada procedimiento.
   </p>
+
+  <div style="margin-top: 40px; max-width:850px; margin:auto;">
+    <ul style="list-style: none; padding-left: 0; font-size: 1.05rem; line-height: 2;">
+      <li><strong>BioDent Colombia S.A.S.</strong> – Materiales biocompatibles y restauraciones estéticas.</li>
+      <li><strong>ProClinic Estética Oral</strong> – Suministros estéticos: blanqueamiento, resinas y adhesivos.</li>
+      <li><strong>MediNova Importaciones Odontológicas</strong> – Instrumental quirúrgico especializado y de calidad internacional.</li>
+      <li><strong>Club Dental</strong>  – Suministros odontológicos generales con enfoque en calidad, economía y servicio confiable.</li>
+      <li><strong>Rapident</strong>   – Proveedor ágil de materiales dentales, reconocido por su entrega rápida y atención eficiente.</li>
+      <li><strong>Recorddental </strong>– Especialistas en insumos clínicos modernos, con soluciones para odontología restaurativa y preventiva.</li>
+      <li><strong>Cada Dental</strong>– Distribuidor completo de equipos e instrumental odontológico, con soporte técnico y cobertura nacional.</li>
+    </ul>
+  </div>
 </section>
 
-<!-- Proyectos -->
+
+
 <!-- Proyectos -->
 <section id="proyectos" style="background:#fff0f0;">
   <h2 class="section-title" data-aos="fade-up">Proyectos</h2>
@@ -363,35 +442,55 @@ Valoramos profundamente las opiniones de quienes nos eligen, por eso incluimos e
 
 
   <!-- Servicios -->
-  <section id="servicios">
-    <h2 class="section-title" data-aos="fade-up">Nuestros Servicios</h2>
-    <div class="services-grid">
-      <div class="service-card" data-aos="fade-up">
-        <h3>Ortodoncia</h3>
-        <p>Alineamos tu sonrisa con tecnología avanzada.</p>
-      </div>
-      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-        <h3>Implantes</h3>
-        <p>Soluciones duraderas y naturales para reemplazar piezas dentales.</p>
-      </div>
-      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-        <h3>Blanqueamiento</h3>
-        <p>Ilumina tu sonrisa en pocas sesiones.</p>
-      </div>
-      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-        <h3>Diseño de sonrisa digital</h3>
-        <p>Simulación estética personalizada de sonrisa con tecnología digital avanzada y precisa.</p>
-      </div>
-      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-        <h3>Tratamiento de conductos</h3>
-        <p>Elimina infección del diente, conservando su estructura y función natural.</p>
-      </div>
-      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-        <h3>Profilaxis Dental (Limpieza Básica)</h3>
-        <p>Remueve placa y sarro, previene caries y enfermedades de encías.</p>
-      </div>
+<section id="servicios">
+  <h2 class="section-title">Nuestros Servicios</h2>
+  <div class="servicios-grid">
+
+    <!-- Ortodoncia -->
+    <div class="service-card">
+      <img src="https://th.bing.com/th/id/OIP.qETF7HDL7Xs_U0tHhOI42wHaGP?rs=1&pid=ImgDetMain" alt="Ortodoncia">
+      <h3>Ortodoncia</h3>
+      <p>Alineamos tu sonrisa con tecnología avanzada.</p>
     </div>
-  </section>
+
+    <!-- Implantes -->
+    <div class="service-card">
+      <img src="https://th.bing.com/th/id/R.9a122702cf92cfe82ac1204f30df95bd?rik=3qUMESLDiaYsJA&riu=http%3a%2f%2fritadent.com.tr%2fdosyalar%2fsite_resim%2fveri%2fkat%2f5139447.jpg&ehk=574%2fXXs0BzPKlyM0tFsXWv%2fEjpSMhFBvbsk89G1Hlms%3d&risl=&pid=ImgRaw&r=0" alt="Implantes">
+      <h3>Implantes</h3>
+      <p>Soluciones duraderas y naturales para reemplazar piezas dentales.</p>
+    </div>
+
+    <!-- Blanqueamiento -->
+    <div class="service-card">
+      <img src="https://albaclinicadental.com/es/wp-content/uploads/alba-clinica-dental-blanqueamiento-dental-01.jpg" alt="Blanqueamiento">
+      <h3>Blanqueamiento</h3>
+      <p>Ilumina tu sonrisa en pocas sesiones.</p>
+    </div>
+
+    <!-- Diseño de sonrisa digital -->
+    <div class="service-card">
+      <img src="https://www.dentalclinicb.com.mx/wp-content/uploads/Carillas-dentales-diseno-de-sonrisas-e1713467672136-1024x573.jpg" alt="Diseño de sonrisa digital">
+      <h3>Diseño de sonrisa digital</h3>
+      <p>Simulación estética personalizada de sonrisa con tecnología digital avanzada y precisa.</p>
+    </div>
+
+    <!-- Tratamiento de conductos -->
+    <div class="service-card">
+      <img src="https://n8r4b7d2.rocketcdn.me/wp-content/uploads/2020/01/mituri-despre-tratamentul-endodontic.jpg" alt="Tratamiento de conductos">
+      <h3>Tratamiento de conductos</h3>
+      <p>Elimina infección del diente, conservando su estructura y función natural.</p>
+    </div>
+
+    <!-- Profilaxis dental -->
+    <div class="service-card">
+      <img src="https://blog.neoface.com.br/wp-content/uploads/2018/08/Tratamento-Ortodontico-768x512.jpg" alt="Profilaxis Dental">
+      <h3>Profilaxis Dental (Limpieza Básica)</h3>
+      <p>Remueve placa y sarro, previene caries y enfermedades de encías.</p>
+    </div>
+  </div>
+</section>
+
+
 
   <!-- Testimonios -->
   <section id="testimonios">
@@ -404,13 +503,30 @@ Valoramos profundamente las opiniones de quienes nos eligen, por eso incluimos e
       <p>"Me devolvieron la confianza con mi sonrisa. Totalmente recomendados."</p>
       <strong>– Carlos López</strong>
     </div>
+     <div class="testimonial-card" data-aos="fade-right">
+      <p>"La atención fue impecable, y el ambiente transmite mucha tranquilidad."</p>
+      <strong>– Laura Restrepo</strong>
+    </div>
+    <div class="testimonial-card" data-aos="fade-left" data-aos-delay="100">
+      <p>"El diseño de sonrisa superó mis expectativas. ¡Gracias Odontium!"</p>
+      <strong>– Andrés Torres</strong>
+    </div>
+     <div class="testimonial-card" data-aos="fade-right">
+      <p>"Profesionales muy humanos, resolvieron mi tratamiento con mucho cuidado."</p>
+      <strong>– Juliana Díaz</strong>
+    </div>
+    <div class="testimonial-card" data-aos="fade-left" data-aos-delay="100">
+      <p>"Volvería sin dudarlo. Se nota que trabajan con amor y calidad."</p>
+      <strong>– Felipe Rojas</strong>
+    </div>
+
   </section>
 
   <!-- Galería -->
   <section id="galeria">
     <h2 class="section-title" data-aos="fade-up">Galería</h2>
     <div class="gallery-grid">
-      <img src="https://via.placeholder.com/300x200?text=Antes" alt="Antes" data-aos="zoom-in">
+      <img src="clinica.png" alt="Antes" data-aos="zoom-in">
       <img src="https://via.placeholder.com/300x200?text=Después" alt="Después" data-aos="zoom-in" data-aos-delay="100">
     </div>
   </section>
