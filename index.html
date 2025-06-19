@@ -152,8 +152,16 @@ h2.section-title {
 
 .gallery-grid img {
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  height: 300px; /* alto uniforme */
+  object-fit: cover; /* recorta proporcionalmente */
+  border-radius: 16px; /* bordes más elegantes */
+  border: 3px solid #e0e0e0; /* borde sutil */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* sombra suave */
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03); /* animación sutil al pasar el mouse */
 }
 
 .contact-form input,
@@ -524,7 +532,7 @@ Valoramos profundamente las opiniones de quienes nos eligen, por eso incluimos e
 
   <!-- Galería -->
   <section id="galeria">
-    <h2 class="section-title" data-aos="fade-up">Galería</h2>
+    <h2 class="section-title" data-aos="fade-up">Nuestras Instalaciones</h2>
     <div class="gallery-grid">
       <img src="https://lh5.googleusercontent.com/p/AF1QipO4E_BkvxL_Ylf08-r-xhJAud84_vp4J5MNifkM" alt="Antes" data-aos="zoom-in">
       <img src="https://th.bing.com/th/id/R.4f4ba38a534871adecb5ca459b28825f?rik=nEm7jE0VaE2Dhg&pid=ImgRaw&r=0" alt="Después" data-aos="zoom-in" data-aos-delay="100">
